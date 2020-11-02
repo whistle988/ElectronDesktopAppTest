@@ -1,0 +1,17 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "To Do List",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Elena Vasileva",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "electron": "^9.1.0",
+    "esm": "^3.2.25",
+    "firebase": "^4.7.0"
+  }
+}

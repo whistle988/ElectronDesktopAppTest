@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ToDoList</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel='stylesheet' href='./css/styles.css'>
+
+</head>
+<body>
+  <div class="container">
+    <div class="jumbo">
+      <h1 id="jumb">ToDoList</h1>
+
+      <label for="itemId">Id</label><br>
+      <input type="text" name="itemId" id="itemId">
+
+      <label for="Item">Add Item</label><br>
+      <input type="text" name="item" id="item" placeholder="Write task you want to add here">
+      
+      <button type="button" name="btnAddItem" class="btn btn-warning" onclick="newItem()" id="btnAddItem">Add Item</button>
+      <button type="button" name="btnRemoveItem" class="btn waves-effect waves-light" onclick="removeItem()" id="btnRemoveItem">Remove</button>
+    </div>
+  </div>
+  <div class="maincontainer" id='maincontainer'>
+    <div id="containerdo" style="visibility: visible;" class="col-lg-10 col-md-10 col-sm-9 col-xs-7 "></div>      
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDtlOD9vvnUBmISDO10amKGT_Y32JuLIA8",
+    authDomain: "todolist-98f58.firebaseapp.com",
+    databaseURL: "https://todolist-98f58.firebaseio.com",
+    projectId: "todolist-98f58",
+    storageBucket: "todolist-98f58.appspot.com",
+    messagingSenderId: "934688299174",
+    appId: "1:934688299174:web:069b1baf209d32da00bc67",
+    measurementId: "G-KHNFV47GJT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script type='text/javascript' src='./mainWindow.js'></script>
+
+
+</body>
+</html>

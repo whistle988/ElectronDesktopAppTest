@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
+    <link rel='stylesheet' href='./css/styles.css'>
+
+</head>
+<body>
+    <div id="form container" class='container'>
+    </div class='form group'>
+        <input type="text" placeholder='Email: ' class='form-control' id='email'>
+        <input type="password" placeholder='Password: ' class='form-control' id='password'>
+        <button class="btn btn-danger" id="signUpBtn">Sign Up</button>
+        <button class="btn btn-success" id="signInBtn">Sign In</button>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDtlOD9vvnUBmISDO10amKGT_Y32JuLIA8",
+        authDomain: "todolist-98f58.firebaseapp.com",
+        databaseURL: "https://todolist-98f58.firebaseio.com",
+        projectId: "todolist-98f58",
+        storageBucket: "todolist-98f58.appspot.com",
+        messagingSenderId: "934688299174",
+        appId: "1:934688299174:web:069b1baf209d32da00bc67",
+        measurementId: "G-KHNFV47GJT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script type='text/javascript' src='./loginWindow.js'></script>
+
+</body>
+
+</html>
